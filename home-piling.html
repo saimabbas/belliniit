@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="belliniit">
-      <header>
+    <main class="belliniit" id="pagepiling">
+      <!-- <header>
         <div class="box">
           <div class="header-content">
             <img src="/assets/img/main-logo.png" alt="" />
@@ -60,7 +60,7 @@
             <a href="#section7">Contact</a>
           </div>
         </div>
-      </div>
+      </div> -->
       <section class="hero-section" id="section1">
         <h1>BELLINIIT</h1>
         <a href="#section2">
@@ -583,27 +583,12 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-
-        mousewheel: {
-          invert: false,
-          sensitivity: 1,
-          releaseOnEdges: true,
-          eventsTarget: ".swiper-wrapper", // Specify the target element for mousewheel events
-        },
-        on: {
-          init: function () {
-            swiper.mousewheel.disable(); // Disable mousewheel control by default
-          },
-          reachEnd: function () {
-            swiper.mousewheel.enable(); // Enable mousewheel control when reaching the end
-          },
-          fromEdge: function () {
-            swiper.mousewheel.disable(); // Disable mousewheel control when reaching the edge
-          },
-        },
+    <script src="pp.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#pagepiling").pagepiling({
+          anchors: ["page1", "page2", "page3", "page4"],
+        });
       });
     </script>
     <script>

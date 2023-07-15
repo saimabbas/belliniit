@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belliniit</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="belliniit">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+              ipsa tenetur. Accusantium unde dolore hic id et maxime minima
+              dicta ad dolor harum eum vitae, ullam quod aliquid quibusdam?
+              Officiis consequuntur consequatur totam numquam quod, accusamus
+              magnam! Autem voluptatibus, sunt quam cupiditate aut voluptatum
+              enim! Magni maxime nam hic, consectetur iste ullam, aliquid nulla
+              fugiat id ad, beatae blanditiis expedita perferendis doloremque
+              vero. Quos, aliquid. Fugit quia aut fuga corrupti hic cumque
+              aspernatur dolorum obcaecati molestias pariatur, dicta alias
+              asperiores. Incidunt, dolores deleniti ullam nisi nemo est eius
+              quo, vero vel eaque magnam. Quam dolore amet sit nesciunt? Quas
+              repellendus error quaerat, corporis sunt, obcaecati aliquam ea
+              asperiores velit exercitationem ut necessitatibus at repudiandae
+              delectus accusantium odio animi deleniti eum minima officia
+              suscipit? Reiciendis quidem nihil eaque doloribus dolore
+              accusantium quia provident totam quibusdam, quasi exercitationem
+              consequuntur dolores enim fuga nulla dignissimos cupiditate.
+              Debitis, minus magni? Eum eos doloribus quidem error non
+              aspernatur placeat fugiat sunt omnis molestias pariatur iste earum
+              laudantium similique odio quo fugit praesentium iusto, aliquam ea
+              et, nostrum quis ex? Nesciunt necessitatibus nisi iste officia
+              voluptatibus nihil nostrum doloribus, natus error! Corrupti non
+              eligendi aliquam reiciendis amet praesentium aut, provident vero
+              neque porro consequatur nobis necessitatibus nemo. Aperiam
+              provident id adipisci vero maiores consequatur beatae? Laboriosam
+              perferendis hic excepturi possimus sapiente dolorum, iste
+              veritatis tenetur magnam expedita sint eum architecto consectetur
+              neque fugit. Delectus, ea? Suscipit aliquam aliquid, provident,
+              voluptas error magni reprehenderit molestiae quo, ratione
+              obcaecati corporis? Qui nisi accusamus quo consectetur quis magni
+              iusto quaerat, ex numquam quos ab maxime mollitia tenetur itaque
+              ipsam cumque cupiditate sequi illo, rem vel a fugiat temporibus,
+              exercitationem distinctio? Ut velit accusamus et. Perspiciatis
+              quis modi sapiente praesentium nam qui molestias, voluptatum
+              fugiat ipsa ex, voluptatem, totam itaque atque soluta blanditiis
+              et? Qui laborum a omnis, quis, soluta ipsa asperiores ipsum
+              mollitia veniam velit impedit? Voluptatum sed incidunt quam animi
+              corrupti eligendi! Sed expedita nesciunt distinctio nam. Molestiae
+              eius saepe in incidunt, impedit libero debitis, illum, quibusdam
+              odio porro consectetur. In dolores nesciunt totam suscipit est
+              repellat commodi nobis facere adipisci, ratione, ullam iure
+              aperiam, odio velit incidunt magni odit? Quidem nobis esse error
+              expedita architecto pariatur, aut laborum eligendi quo? Illo
+              facere exercitationem minima quam, quis quo temporibus suscipit at
+              harum modi? Tenetur qui odio consequatur corporis modi quis iure
+              porro inventore doloremque officia, ex dolor? Rerum numquam
+              adipisci necessitatibus corrupti vitae, temporibus illum
+              voluptatum dolores officia deserunt, itaque iusto illo, atque
+              error! Velit quis cupiditate obcaecati in molestias sequi magnam
+              est quibusdam tempora et. Impedit hic recusandae deserunt
+              temporibus ab amet illum numquam non. Debitis dolore quo,
+              quibusdam veritatis distinctio maxime inventore cupiditate fugiat,
+              perspiciatis doloribus officiis pariatur ea
+            </div>
+          </div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+
+        mousewheel: {
+          invert: false,
+          sensitivity: 1,
+          releaseOnEdges: true,
+          eventsTarget: ".swiper-wrapper", // Specify the target element for mousewheel events
+        },
+        on: {
+          init: function () {
+            swiper.mousewheel.disable(); // Disable mousewheel control by default
+          },
+          reachEnd: function () {
+            swiper.mousewheel.enable(); // Enable mousewheel control when reaching the end
+          },
+          fromEdge: function () {
+            swiper.mousewheel.disable(); // Disable mousewheel control when reaching the edge
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+  1. design
+  2. timeline
+  3. landing animations
+  4. hover animations
+  5. section animations
+  6. stop animations
+ -->

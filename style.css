@@ -16,9 +16,6 @@ html,
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  scroll-behavior: smooth;
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
@@ -36,6 +33,12 @@ h2 {
   width: 100%;
   text-align: center;
 }
+/* section {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+} */
 .hero-section {
   width: 100%;
   height: 100vh;
@@ -50,7 +53,7 @@ h2 {
 }
 .about-section {
   width: 100%;
-  margin: 7.5rem 0;
+  padding: 7.5rem 0;
 }
 .about-content {
   width: 100%;
@@ -114,7 +117,7 @@ h2 {
 }
 .process-section {
   width: 100%;
-  margin: 7.5rem 0;
+  padding: 7.5rem 0;
 }
 .timeline-horizontal {
   width: 100%;
@@ -159,7 +162,7 @@ h2 {
 }
 .services-section {
   width: 100%;
-  margin: 7.5rem 0;
+  padding: 7.5rem 0;
 }
 .services-content > h6 {
   font-size: 1.75rem;
@@ -200,7 +203,7 @@ h2 {
 }
 .technologies-section {
   width: 100%;
-  margin: 7.5rem 0;
+  padding: 7.5rem 0;
 }
 .technologies-grid {
   width: 100%;
@@ -264,7 +267,8 @@ h2 {
   width: 25rem;
   height: 25rem;
   border-radius: 1rem;
-  margin: 0 0 1.5rem 0;
+  margin: 0 2.5rem 2.5rem 0;
+  float: left;
 }
 .team-grid-card-team img {
   width: 65%;
@@ -292,7 +296,7 @@ h2 {
 }
 .contact-section {
   width: 100%;
-  margin: 7.5rem 0 0 0;
+  padding: 7.5rem 0 0 0;
 }
 .contact-grid {
   width: 100%;
@@ -374,7 +378,8 @@ h2 {
 }
 footer {
   width: 100%;
-  margin: 5rem 0 3.5rem 0;
+  padding: 5rem 0 3.5rem 0;
+  background-color: #fff;
 }
 .footer-content {
   width: 100%;
@@ -410,11 +415,12 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  display: none;
 }
 .header-content {
   width: 100%;
   position: relative;
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -486,6 +492,23 @@ header {
   width: 100%;
   text-align: center;
 }
+/* .mySwiper,
+.swiper-slide {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.swiper-slide-content {
+  height: 100%;
+  overflow-y: auto;
+} */
+.belliniit {
+  width: 100%;
+}
+section,
+footer {
+  background-color: #fff;
+}
 @media screen and (max-width: 1200px) {
   .box {
     padding: 0 3.5rem;
@@ -507,7 +530,7 @@ header {
   .technologies-section,
   .team-section,
   .contact-section {
-    margin: 3.5rem 0;
+    padding: 3.5rem 0;
   }
   h2 {
     font-size: 3rem;
@@ -571,7 +594,7 @@ header {
   .technologies-section,
   .team-section,
   .contact-section {
-    margin: 2.5rem 0;
+    padding: 2.5rem 0;
   }
   .hero-section h1 {
     font-size: 6.5rem;
@@ -661,8 +684,5 @@ header {
   }
   .footer-content img {
     margin: 0 0 2.5rem 0;
-  }
-  .header-content {
-    padding: 1.5rem 0;
   }
 }
