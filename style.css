@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 h2 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   letter-spacing: 5px;
   color: var(--peach);
   width: 100%;
@@ -53,14 +53,14 @@ h2 {
 }
 .about-section {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 2.5rem 0;
 }
 .about-content {
   width: 100%;
 }
 .about-1 {
   width: 100%;
-  margin: 7.5rem 0;
+  margin: 5rem 0;
   display: grid;
   grid-template-columns: 1fr 1.35fr;
   grid-template-rows: auto;
@@ -71,7 +71,7 @@ h2 {
   padding: 2.5rem 0 0 0;
 }
 .about-1-left p {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #000;
   opacity: 0.75;
 }
@@ -117,12 +117,12 @@ h2 {
 }
 .process-section {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 2.5rem 0;
 }
 .timeline-horizontal {
   width: 100%;
   object-fit: contain;
-  margin: 7.5rem 0;
+  margin: 5rem 0;
 }
 .timeline-vertical {
   width: 100%;
@@ -162,7 +162,7 @@ h2 {
 }
 .services-section {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 5rem 0;
 }
 .services-content > h6 {
   font-size: 1.75rem;
@@ -203,7 +203,7 @@ h2 {
 }
 .technologies-section {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 5rem 0;
 }
 .technologies-grid {
   width: 100%;
@@ -211,7 +211,7 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 1.5rem;
-  margin: 7.5rem 0 0 0;
+  margin: 5rem 0 0 0;
 }
 .technologies-grid-card {
   width: 100%;
@@ -241,9 +241,9 @@ h2 {
   background-color: #f7f8f9;
   padding: 2.5rem 0;
 }
-.team {
+.team-section {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 2.5rem 0;
 }
 .team-grid {
   width: 100%;

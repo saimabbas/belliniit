@@ -18,13 +18,117 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="jquery.scrollify.js"></script>
+    <script>
+      $(function () {
+        $.scrollify({
+          section: ".panel",
+          scrollSpeed: 1000,
+          updateHash: true,
+          offset: 0,
+        });
+      });
+    </script>
+    <script>
+      var TH1 = document.getElementById("t1-head");
+      var TB1 = document.getElementById("t1-body");
+      TH1.addEventListener("click", function () {
+        if (TB1.style.display === "none") {
+          TB1.style.display = "block";
+        } else {
+          TB1.style.display = "none";
+        }
+      });
+      var TH2 = document.getElementById("t2-head");
+      var TB2 = document.getElementById("t2-body");
+      TH2.addEventListener("click", function () {
+        if (TB2.style.display === "none") {
+          TB2.style.display = "block";
+        } else {
+          TB2.style.display = "none";
+        }
+      });
+      var TH3 = document.getElementById("t3-head");
+      var TB3 = document.getElementById("t3-body");
+      TH3.addEventListener("click", function () {
+        if (TB3.style.display === "none") {
+          TB3.style.display = "block";
+        } else {
+          TB3.style.display = "none";
+        }
+      });
+      var TH4 = document.getElementById("t4-head");
+      var TB4 = document.getElementById("t4-body");
+      TH4.addEventListener("click", function () {
+        if (TB4.style.display === "none") {
+          TB4.style.display = "block";
+        } else {
+          TB4.style.display = "none";
+        }
+      });
+      var TH5 = document.getElementById("t5-head");
+      var TB5 = document.getElementById("t5-body");
+      TH5.addEventListener("click", function () {
+        if (TB5.style.display === "none") {
+          TB5.style.display = "block";
+        } else {
+          TB5.style.display = "none";
+        }
+      });
+      var TH6 = document.getElementById("t6-head");
+      var TB6 = document.getElementById("t6-body");
+      TH6.addEventListener("click", function () {
+        if (TB6.style.display === "none") {
+          TB6.style.display = "block";
+        } else {
+          TB6.style.display = "none";
+        }
+      });
+      var TH7 = document.getElementById("t7-head");
+      var TB7 = document.getElementById("t7-body");
+      TH7.addEventListener("click", function () {
+        if (TB7.style.display === "none") {
+          TB7.style.display = "block";
+        } else {
+          TB7.style.display = "none";
+        }
+      });
+      var TH8 = document.getElementById("t8-head");
+      var TB8 = document.getElementById("t8-body");
+      TH8.addEventListener("click", function () {
+        if (TB8.style.display === "none") {
+          TB8.style.display = "block";
+        } else {
+          TB8.style.display = "none";
+        }
+      });
+
+      $(".open-header").click(() => {
+        $(".header-mob").css({
+          display: "block",
+        });
+      });
+      $(".close-header").click(() => {
+        $(".header-mob").css({
+          display: "none",
+        });
+      });
+      $(".header-mob-body a").click(() => {
+        $(".header-mob").css({
+          display: "none",
+        });
+      });
+    </script>
   </head>
   <body>
     <main class="belliniit">
       <header>
         <div class="box">
           <div class="header-content">
-            <img src="/assets/img/main-logo.png" alt="" />
+            <img src="assets/img/main-logo.png" alt="" />
             <div class="header-center">
               <a href="#section2">About</a>
               <a href="#section3">Process</a>
@@ -41,11 +145,10 @@
           </div>
         </div>
       </header>
-
       <div class="header-mob">
         <div class="box">
           <div class="header-mob-head">
-            <img src="/assets/img/main-logo.png" alt="" />
+            <img src="assets/img/main-logo.png" alt="" />
 
             <div class="close-header">
               <span class="material-symbols-outlined"> close </span>
@@ -61,13 +164,13 @@
           </div>
         </div>
       </div>
-      <section class="hero-section" id="section1">
+      <section class="hero-section panel" id="section1">
         <h1>BELLINIIT</h1>
         <a href="#section2">
           <span class="material-symbols-outlined"> arrow_downward </span>
         </a>
       </section>
-      <section class="about-section" id="section2">
+      <section class="about-section panel" id="section2">
         <div class="box">
           <div class="about-content">
             <h2>ABOUT</h2>
@@ -86,7 +189,7 @@
                 </p>
               </div>
               <div class="about-1-right">
-                <img src="/assets/img/about-main-img.png" alt="about" />
+                <img src="assets/img/about-main-img.png" alt="about" />
               </div>
             </div>
             <div class="about-2">
@@ -95,33 +198,33 @@
                 projects.
               </h5>
               <div class="about-logos-grid">
-                <img src="/assets/img/autodesk-logo.png" alt="about-logos" />
-                <img src="/assets/img/oxford-logo.png" alt="about-logos" />
-                <img src="/assets/img/td-logo.png" alt="about-logos" />
-                <img src="/assets/img/un-logo.png" alt="about-logos" />
-                <img src="/assets/img/vw-logo.png" alt="about-logos" />
+                <img src="assets/img/autodesk-logo.png" alt="about-logos" />
+                <img src="assets/img/oxford-logo.png" alt="about-logos" />
+                <img src="assets/img/td-logo.png" alt="about-logos" />
+                <img src="assets/img/un-logo.png" alt="about-logos" />
+                <img src="assets/img/vw-logo.png" alt="about-logos" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="process-section" id="section3">
+      <section class="process-section panel" id="section3">
         <div class="box">
           <div class="process-content">
             <h2>PROCESS</h2>
             <img
               class="timeline-horizontal"
-              src="/assets/img/timeline-horizontal.png"
+              src="assets/img/timeline-horizontal.png"
               alt=""
             />
             <img
               class="timeline-vertical"
-              src="/assets/img/timeline-vertical.png"
+              src="assets/img/timeline-vertical.png"
               alt=""
             />
             <div class="timeline-grid">
               <div class="timeline-grid-card">
-                <img src="/assets/img/rating-stars.png" alt="" />
+                <img src="assets/img/rating-stars.png" alt="" />
                 <h5>Technical Expertise</h5>
                 <p>
                   15+ years of experience developing projects for start-ups to
@@ -129,7 +232,7 @@
                 </p>
               </div>
               <div class="timeline-grid-card">
-                <img src="/assets/img/shield.png" alt="" />
+                <img src="assets/img/shield.png" alt="" />
                 <h5>Quality</h5>
                 <p>
                   We stand behind our product and offer support throughout the
@@ -137,7 +240,7 @@
                 </p>
               </div>
               <div class="timeline-grid-card">
-                <img src="/assets/img/puzzle-pieces.png" alt="" />
+                <img src="assets/img/puzzle-pieces.png" alt="" />
                 <h5>Problem Solving</h5>
                 <p>
                   Our custom software development company transforms complex
@@ -145,7 +248,7 @@
                 </p>
               </div>
               <div class="timeline-grid-card">
-                <img src="/assets/img/value-chain.png" alt="" />
+                <img src="assets/img/value-chain.png" alt="" />
                 <h5>Cost Optimization</h5>
                 <p>
                   We deliver streamlined solutions that drive efficiency and
@@ -156,7 +259,7 @@
           </div>
         </div>
       </section>
-      <section class="services-section" id="section4">
+      <section class="services-section panel" id="section4">
         <div class="box">
           <div class="services-content">
             <h2>Services</h2>
@@ -267,7 +370,7 @@
           </div>
         </div>
       </section>
-      <section class="technologies-section" id="section5">
+      <section class="technologies-section panel" id="section5">
         <div class="box">
           <div class="technologies-content">
             <h2>Technologies</h2>
@@ -456,13 +559,13 @@
           </div>
         </div>
       </section>
-      <section class="team-section" id="section6">
+      <section class="team-section panel" id="section6">
         <div class="box">
           <div class="team-content">
             <h2>TEAM</h2>
             <div class="team-grid">
               <div class="team-grid-card team-grid-card-ceo">
-                <img src="/assets/img/ceo.jpg" alt="" />
+                <img src="assets/img/ceo.jpg" alt="" />
                 <h4>George Litvinov</h4>
                 <h5>Co-Founder & CTO</h5>
                 <p>
@@ -481,7 +584,7 @@
                 </p>
               </div>
               <div class="team-grid-card team-grid-card-ceo">
-                <img src="/assets/img/ceo.jpg" alt="" />
+                <img src="assets/img/ceo.jpg" alt="" />
                 <h4>Alyssa Korol-Korolevskiy</h4>
                 <h5>Co-Founder & COO</h5>
                 <p>
@@ -499,7 +602,7 @@
                 </p>
               </div>
               <div class="team-grid-card team-grid-card-team">
-                <img src="/assets/img/team.jpg" alt="" />
+                <img src="assets/img/team.jpg" alt="" />
                 <h4>Developers</h4>
                 <p>
                   Introducing the custom software development team! Known for
@@ -522,7 +625,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section" id="section7">
+      <section class="contact-section panel" id="section7">
         <div class="box">
           <div class="contact-grid">
             <div class="contact-grid-left">
@@ -568,7 +671,7 @@
       <footer>
         <div class="box">
           <div class="footer-content">
-            <img src="/assets/img/main-logo.png" alt="" />
+            <img src="assets/img/main-logo.png" alt="" />
             <div class="footer-right">
               <p>
                 <i class="fa-solid fa-location-dot"></i> 2nd Street, D-Block,
@@ -581,120 +684,5 @@
         </div>
       </footer>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-
-        mousewheel: {
-          invert: false,
-          sensitivity: 1,
-          releaseOnEdges: true,
-          eventsTarget: ".swiper-wrapper", // Specify the target element for mousewheel events
-        },
-        on: {
-          init: function () {
-            swiper.mousewheel.disable(); // Disable mousewheel control by default
-          },
-          reachEnd: function () {
-            swiper.mousewheel.enable(); // Enable mousewheel control when reaching the end
-          },
-          fromEdge: function () {
-            swiper.mousewheel.disable(); // Disable mousewheel control when reaching the edge
-          },
-        },
-      });
-    </script>
-    <script>
-      var TH1 = document.getElementById("t1-head");
-      var TB1 = document.getElementById("t1-body");
-      TH1.addEventListener("click", function () {
-        if (TB1.style.display === "none") {
-          TB1.style.display = "block";
-        } else {
-          TB1.style.display = "none";
-        }
-      });
-      var TH2 = document.getElementById("t2-head");
-      var TB2 = document.getElementById("t2-body");
-      TH2.addEventListener("click", function () {
-        if (TB2.style.display === "none") {
-          TB2.style.display = "block";
-        } else {
-          TB2.style.display = "none";
-        }
-      });
-      var TH3 = document.getElementById("t3-head");
-      var TB3 = document.getElementById("t3-body");
-      TH3.addEventListener("click", function () {
-        if (TB3.style.display === "none") {
-          TB3.style.display = "block";
-        } else {
-          TB3.style.display = "none";
-        }
-      });
-      var TH4 = document.getElementById("t4-head");
-      var TB4 = document.getElementById("t4-body");
-      TH4.addEventListener("click", function () {
-        if (TB4.style.display === "none") {
-          TB4.style.display = "block";
-        } else {
-          TB4.style.display = "none";
-        }
-      });
-      var TH5 = document.getElementById("t5-head");
-      var TB5 = document.getElementById("t5-body");
-      TH5.addEventListener("click", function () {
-        if (TB5.style.display === "none") {
-          TB5.style.display = "block";
-        } else {
-          TB5.style.display = "none";
-        }
-      });
-      var TH6 = document.getElementById("t6-head");
-      var TB6 = document.getElementById("t6-body");
-      TH6.addEventListener("click", function () {
-        if (TB6.style.display === "none") {
-          TB6.style.display = "block";
-        } else {
-          TB6.style.display = "none";
-        }
-      });
-      var TH7 = document.getElementById("t7-head");
-      var TB7 = document.getElementById("t7-body");
-      TH7.addEventListener("click", function () {
-        if (TB7.style.display === "none") {
-          TB7.style.display = "block";
-        } else {
-          TB7.style.display = "none";
-        }
-      });
-      var TH8 = document.getElementById("t8-head");
-      var TB8 = document.getElementById("t8-body");
-      TH8.addEventListener("click", function () {
-        if (TB8.style.display === "none") {
-          TB8.style.display = "block";
-        } else {
-          TB8.style.display = "none";
-        }
-      });
-
-      $(".open-header").click(() => {
-        $(".header-mob").css({
-          display: "block",
-        });
-      });
-      $(".close-header").click(() => {
-        $(".header-mob").css({
-          display: "none",
-        });
-      });
-      $(".header-mob-body a").click(() => {
-        $(".header-mob").css({
-          display: "none",
-        });
-      });
-    </script>
   </body>
 </html>
