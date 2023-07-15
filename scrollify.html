@@ -12,65 +12,127 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/fullpage.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="jquery.scrollify.js"></script>
+    <script>
+      $(function () {
+        $.scrollify({
+          section: ".panel",
+          scrollSpeed: 1000,
+          updateHash: false,
+          offset: 0,
+          scrollbars: false,
+        });
+      });
+    </script>
+    <script>
+      var TH1 = document.getElementById("t1-head");
+      var TB1 = document.getElementById("t1-body");
+      TH1.addEventListener("click", function () {
+        if (TB1.style.display === "none") {
+          TB1.style.display = "block";
+        } else {
+          TB1.style.display = "none";
+        }
+      });
+      var TH2 = document.getElementById("t2-head");
+      var TB2 = document.getElementById("t2-body");
+      TH2.addEventListener("click", function () {
+        if (TB2.style.display === "none") {
+          TB2.style.display = "block";
+        } else {
+          TB2.style.display = "none";
+        }
+      });
+      var TH3 = document.getElementById("t3-head");
+      var TB3 = document.getElementById("t3-body");
+      TH3.addEventListener("click", function () {
+        if (TB3.style.display === "none") {
+          TB3.style.display = "block";
+        } else {
+          TB3.style.display = "none";
+        }
+      });
+      var TH4 = document.getElementById("t4-head");
+      var TB4 = document.getElementById("t4-body");
+      TH4.addEventListener("click", function () {
+        if (TB4.style.display === "none") {
+          TB4.style.display = "block";
+        } else {
+          TB4.style.display = "none";
+        }
+      });
+      var TH5 = document.getElementById("t5-head");
+      var TB5 = document.getElementById("t5-body");
+      TH5.addEventListener("click", function () {
+        if (TB5.style.display === "none") {
+          TB5.style.display = "block";
+        } else {
+          TB5.style.display = "none";
+        }
+      });
+      var TH6 = document.getElementById("t6-head");
+      var TB6 = document.getElementById("t6-body");
+      TH6.addEventListener("click", function () {
+        if (TB6.style.display === "none") {
+          TB6.style.display = "block";
+        } else {
+          TB6.style.display = "none";
+        }
+      });
+      var TH7 = document.getElementById("t7-head");
+      var TB7 = document.getElementById("t7-body");
+      TH7.addEventListener("click", function () {
+        if (TB7.style.display === "none") {
+          TB7.style.display = "block";
+        } else {
+          TB7.style.display = "none";
+        }
+      });
+      var TH8 = document.getElementById("t8-head");
+      var TB8 = document.getElementById("t8-body");
+      TH8.addEventListener("click", function () {
+        if (TB8.style.display === "none") {
+          TB8.style.display = "block";
+        } else {
+          TB8.style.display = "none";
+        }
+      });
+
+      $(".open-header").click(() => {
+        $(".header-mob").css({
+          display: "block",
+        });
+      });
+      $(".close-header").click(() => {
+        $(".header-mob").css({
+          display: "none",
+        });
+      });
+      $(".header-mob-body a").click(() => {
+        $(".header-mob").css({
+          display: "none",
+        });
+      });
+    </script>
   </head>
   <body>
-    <!-- <header>
-      <div class="box">
-        <div class="header-content">
-          <a data-menuanchor="home" href="#home">
-            <img src="/assets/img/main-logo.png" alt="" />
-          </a>
-          <div class="header-center" id="#menu">
-            <a data-menuanchor="about" href="#about">About</a>
-            <a data-menuanchor="process" href="#process">Process</a>
-            <a data-menuanchor="services" href="#services">Services</a>
-            <a data-menuanchor="technologies" href="#technologies"
-              >Technologies</a
-            >
-            <a data-menuanchor="team" href="#team">Team</a>
-            <a data-menuanchor="contact" href="#contact">Contact</a>
-          </div>
-          <div class="header-right">
-            <div class="open-header">
-              <span class="material-symbols-outlined"> menu </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="header-mob">
-      <div class="box">
-        <div class="header-mob-head">
-          <a data-menuanchor="home" href="#home">
-            <img src="/assets/img/main-logo.png" alt="" />
-          </a>
-
-          <div class="close-header">
-            <span class="material-symbols-outlined"> close </span>
-          </div>
-        </div>
-        <div class="header-mob-body">
-          <a data-menuanchor="about" href="#about">About</a>
-          <a data-menuanchor="process" href="#process">Process</a>
-          <a data-menuanchor="services" href="#services">Services</a>
-          <a data-menuanchor="technologies" href="#technologies"
-            >Technologies</a
-          >
-          <a data-menuanchor="team" href="#team">Team</a>
-          <a data-menuanchor="contact" href="#contact">Contact</a>
-        </div>
-      </div>
-    </div> -->
-    <main id="fullpage">
-      <section class="hero-section section" id="home">
+    <main class="belliniit">
+      <section class="hero-section panel" id="section1">
         <h1>BELLINIIT</h1>
         <a href="#section2">
           <span class="material-symbols-outlined"> arrow_downward </span>
         </a>
       </section>
-      <section class="about-section section" id="about">
+      <section class="about-section panel" id="section2">
         <div class="box">
           <div class="about-content">
             <h2>ABOUT</h2>
@@ -108,7 +170,7 @@
           </div>
         </div>
       </section>
-      <section class="process-section section" id="process">
+      <section class="process-section panel" id="section3">
         <div class="box">
           <div class="process-content">
             <h2>PROCESS</h2>
@@ -159,7 +221,7 @@
           </div>
         </div>
       </section>
-      <section class="services-section section" id="services">
+      <section class="services-section panel" id="section4">
         <div class="box">
           <div class="services-content">
             <h2>Services</h2>
@@ -270,7 +332,7 @@
           </div>
         </div>
       </section>
-      <section class="technologies-section section" id="technologies">
+      <section class="technologies-section panel" id="section5">
         <div class="box">
           <div class="technologies-content">
             <h2>Technologies</h2>
@@ -459,7 +521,7 @@
           </div>
         </div>
       </section>
-      <section class="team-section section" id="team">
+      <section class="team-section panel" id="section6">
         <div class="box">
           <div class="team-content">
             <h2>TEAM</h2>
@@ -525,7 +587,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-section section" id="contact">
+      <section class="contact-section panel" id="section7">
         <div class="box">
           <div class="contact-grid">
             <div class="contact-grid-left">
@@ -584,32 +646,5 @@
         </footer>
       </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="js/fullpage.js"></script>
-    <script type="text/javascript">
-      var myFullpage = new fullpage("#fullpage", {
-        anchors: [
-          "hero-section",
-          "about-section",
-          "process-section",
-          "services-section",
-          "technologies-section",
-          "team-section",
-          "contact-section",
-        ],
-        scrollOverflow: true,
-        onScrollOverflow: function (section, slide, position, direction) {
-          var params = {
-            section: section,
-            slide: slide,
-            position: position,
-            direction: direction,
-          };
-
-          console.log("--- onScrollOverflow ---");
-          console.log(params);
-        },
-      });
-    </script>
   </body>
 </html>
