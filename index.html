@@ -676,42 +676,49 @@
                 US!
               </h3>
             </div>
-            <form
-              class="contact-grid-right"
-              id="contact-form"
-              action="send_email.php"
-              method="post"
-            >
+            <form class="contact-grid-right" id="contactForm">
               <div class="contact-input-grid">
                 <div class="form-box">
                   <label for="name">Name <span>*</span></label>
-                  <input type="text" name="name" id="name" required />
+                  <input type="text" name="Name" id="name" required />
                 </div>
                 <div class="form-box">
                   <label for="company">Company <span>*</span></label>
-                  <input type="text" name="company" id="company" required />
+                  <input type="text" name="Company" id="company" required />
                 </div>
                 <div class="form-box">
                   <label for="email">Email <span>*</span></label>
-                  <input type="text" name="email" id="email" required />
+                  <input type="text" name="Email" id="email" required />
                 </div>
                 <div class="form-box">
                   <label for="phone">Phone <span>*</span></label>
-                  <input type="text" name="phone" id="phone" required />
+                  <input type="text" name="Phone" id="phone" required />
                 </div>
               </div>
 
               <div class="form-box">
                 <label for="message">Message <span>*</span></label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="Message" required></textarea>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="option1" id="option1" />
-                <label for="option1">Request Case Studies (optional)</label>
+                <input
+                  type="checkbox"
+                  name="Request_Case_Studies"
+                  id="Request_Case_Studies"
+                />
+                <label for="Request_Case_Studies"
+                  >Request Case Studies (optional)</label
+                >
               </div>
               <div class="form-check">
-                <input type="checkbox" id="option2" name="option2" />
-                <label for="option2">Request Testimonials (optional)</label>
+                <input
+                  type="checkbox"
+                  id="Request_Testimonials"
+                  name="Request_Testimonials"
+                />
+                <label for="Request_Testimonials"
+                  >Request Testimonials (optional)</label
+                >
               </div>
               <button type="submit" id="submitButton">SEND</button>
             </form>
@@ -737,7 +744,59 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/fullpage.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
 
+          // Retrieve form data
+          var formData = new FormData(this);
+
+          // Optional checkboxes
+
+          var Request_Case_Studies = document.querySelector(
+            'input[name="Request_Case_Studies"]'
+          );
+          if (Request_Case_Studies.checked) {
+            formData.set("Request_Case_Studies", "Yes");
+          } else {
+            formData.delete("Request_Case_Studies"); // Remove the value if not checked
+          }
+
+          var Request_Testimonials = document.querySelector(
+            'input[name="Request_Testimonials"]'
+          );
+          if (Request_Testimonials.checked) {
+            formData.set("Request_Testimonials", "Yes");
+          } else {
+            formData.delete("Request_Testimonials"); // Remove the value if not checked
+          }
+
+          // Send data using email
+          var email = "saimabbas220022@gmail.com";
+          var subject = "New Contact Form Submission";
+          var body = "";
+          formData.forEach(function (value, key) {
+            body += key + ": " + value + "\n";
+          });
+
+          var mailtoLink =
+            "mailto:" +
+            email +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(body);
+          window.location.href = mailtoLink;
+
+          // Show success message
+          alert("Form submitted successfully!");
+
+          // Reset form
+          this.reset();
+        });
+    </script>
     <script type="text/javascript">
       var myFullpage = new fullpage("#fullpage", {
         anchors: [
