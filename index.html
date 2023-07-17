@@ -16,22 +16,35 @@
     <link rel="stylesheet" href="css/fullpage.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="box">
-        <div class="header-content">
-          <a data-menuanchor="home" href="#home">
-            <img src="/assets/img/main-logo.png" alt="" />
-          </a>
-          <div class="header-center" id="#menu">
-            <a data-menuanchor="about" href="#about">About</a>
-            <a data-menuanchor="process" href="#process">Process</a>
-            <a data-menuanchor="services" href="#services">Services</a>
-            <a data-menuanchor="technologies" href="#technologies"
-              >Technologies</a
-            >
-            <a data-menuanchor="team" href="#team">Team</a>
-            <a data-menuanchor="contact" href="#contact">Contact</a>
+        <div class="header-content" id="#menu">
+          <li data-menuanchor="hero-section">
+            <a href="#hero-section">
+              <img src="/assets/img/main-logo.png" alt="" />
+            </a>
+          </li>
+          <div class="header-center">
+            <li data-menuanchor="about-section" class="active">
+              <a href="#about-section">About</a>
+            </li>
+            <li data-menuanchor="process-section">
+              <a href="#process-section">Process</a>
+            </li>
+            <li data-menuanchor="services-section">
+              <a href="#services-section">Services</a>
+            </li>
+            <li data-menuanchor="technologies-section">
+              <a href="#technologies-section">Technologies</a>
+            </li>
+            <li data-menuanchor="team-section">
+              <a href="#team-section">Team</a>
+            </li>
+            <li data-menuanchor="contact-section">
+              <a href="#contact-section">Contact</a>
+            </li>
           </div>
+
           <div class="header-right">
             <div class="open-header">
               <span class="material-symbols-outlined"> menu </span>
@@ -62,7 +75,7 @@
           <a data-menuanchor="contact" href="#contact">Contact</a>
         </div>
       </div>
-    </div> -->
+    </div>
     <main id="fullpage">
       <section class="hero-section section" id="home">
         <h1>BELLINIIT</h1>
@@ -597,6 +610,10 @@
           "team-section",
           "contact-section",
         ],
+        menu: "#menu",
+        slidesNavigation: true,
+        lazyLoad: true,
+        credits: { enabled: false },
         scrollOverflow: true,
         onScrollOverflow: function (section, slide, position, direction) {
           var params = {

@@ -33,7 +33,7 @@ h2 {
   color: var(--peach);
   width: 100%;
   text-align: center;
-  margin: 3.5rem 0 0 0;
+  margin: 10rem 0 0 0;
 }
 .hero-section {
   width: 100%;
@@ -425,6 +425,10 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
 }
 .header-center a {
   font-size: 1.65rem;
@@ -432,6 +436,9 @@ header {
   margin: 0 1.5rem;
   text-decoration: none;
   font-size: 600;
+}
+#menu li.active {
+  border: 2px solid red;
 }
 .header-right {
   width: max-content;
