@@ -56,30 +56,42 @@
     <div class="header-mob">
       <div class="box">
         <div class="header-mob-head">
-          <a data-menuanchor="home" href="#home">
-            <img src="/assets/img/main-logo.png" alt="" />
-          </a>
+          <li data-menuanchor="hero-section">
+            <a href="#hero-section">
+              <img src="/assets/img/main-logo.png" alt="" />
+            </a>
+          </li>
 
           <div class="close-header">
             <span class="material-symbols-outlined"> close </span>
           </div>
         </div>
         <div class="header-mob-body">
-          <a data-menuanchor="about" href="#about">About</a>
-          <a data-menuanchor="process" href="#process">Process</a>
-          <a data-menuanchor="services" href="#services">Services</a>
-          <a data-menuanchor="technologies" href="#technologies"
-            >Technologies</a
-          >
-          <a data-menuanchor="team" href="#team">Team</a>
-          <a data-menuanchor="contact" href="#contact">Contact</a>
+          <li data-menuanchor="about-section" class="active">
+            <a href="#about-section">About</a>
+          </li>
+          <li data-menuanchor="process-section">
+            <a href="#process-section">Process</a>
+          </li>
+          <li data-menuanchor="services-section">
+            <a href="#services-section">Services</a>
+          </li>
+          <li data-menuanchor="technologies-section">
+            <a href="#technologies-section">Technologies</a>
+          </li>
+          <li data-menuanchor="team-section">
+            <a href="#team-section">Team</a>
+          </li>
+          <li data-menuanchor="contact-section">
+            <a href="#contact-section">Contact</a>
+          </li>
         </div>
       </div>
     </div>
     <main id="fullpage">
       <section class="hero-section section" id="home">
         <h1>BELLINIIT</h1>
-        <a href="#section2">
+        <a href="">
           <span class="material-symbols-outlined"> arrow_downward </span>
         </a>
       </section>
@@ -125,7 +137,7 @@
         <div class="box">
           <div class="process-content">
             <h2>PROCESS</h2>
-            <img
+            <!-- <img
               class="timeline-horizontal"
               src="assets/img/timeline-horizontal.png"
               alt=""
@@ -134,7 +146,108 @@
               class="timeline-vertical"
               src="assets/img/timeline-vertical.png"
               alt=""
-            />
+            /> -->
+            <div class="roadmap-content">
+              <div class="road-map-line"></div>
+              <div class="roadmap-box-left">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-text-box">
+                    <h6>Idea</h6>
+                    <p>Tell us about your idea and business goals</p>
+                  </div>
+                  <div class="roadmap-circle">
+                    <img src="assets/img/light-bulb.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="roadmap-box-right">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-circle">
+                    <img src="assets/img/exploration.png" alt="" />
+                  </div>
+                  <div class="roadmap-text-box">
+                    <h6>Business Analysis</h6>
+                    <p>
+                      We will analyse your business processes & provide a
+                      development range cost for your project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="roadmap-box-left">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-text-box">
+                    <h6>Prototype</h6>
+                    <p>
+                      Our team will form a concept of how the software will look
+                      and operate
+                    </p>
+                  </div>
+                  <div class="roadmap-circle">
+                    <img src="assets/img/wireframe.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-box-right">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-circle">
+                    <img src="assets/img/developer.png" alt="" />
+                  </div>
+                  <div class="roadmap-text-box">
+                    <h6>Development</h6>
+                    <p>
+                      We will build your solution assuring quality & open
+                      communication through each step.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-box-left">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-text-box">
+                    <h6>Testing</h6>
+                    <p>
+                      We perform extensive testing to ensure the software works
+                      effeciently.
+                    </p>
+                  </div>
+                  <div class="roadmap-circle">
+                    <img src="assets/img/testing.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-box-right">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-circle">
+                    <img src="assets/img/deployment.png" alt="" />
+                  </div>
+                  <div class="roadmap-text-box">
+                    <h6>Deployment</h6>
+                    <p>
+                      Blast off! We launch the system for your organization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="roadmap-box-left">
+                <div class="roadmap-box-content">
+                  <div class="roadmap-text-box">
+                    <h6>Mainteance & Support</h6>
+                    <p>
+                      We remain your partners for any needed support or upgrades
+                      based on the needs of your business.
+                    </p>
+                  </div>
+                  <div class="roadmap-circle">
+                    <img src="assets/img/technical-support.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="timeline-grid">
               <div class="timeline-grid-card">
                 <img src="assets/img/rating-stars.png" alt="" />
@@ -287,47 +400,51 @@
         <div class="box">
           <div class="technologies-content">
             <h2>Technologies</h2>
-            <div class="technologies-grid">
+            <div class="technologies-grid technologies-grid-pc">
               <div>
                 <div class="technologies-grid-card">
                   <h4 id="t1-head">Programming Languages</h4>
                   <div id="t1-body">
-                    <p>Dart</p>
-                    <p>GoLang</p>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Less</p>
-                    <p>Sass</p>
-                    <p>Java</p>
-                    <p>JavaScript</p>
-                    <p>Objective-C</p>
-                    <p>Perl</p>
-                    <p>PHP</p>
-                    <p>Python</p>
-                    <p>Ruby</p>
-                    <p>Rust</p>
-                    <p>Swift</p>
-                    <p>TypeScript</p>
-                    <p>VB.NET</p>
-                    <p>C#.NET</p>
-                    <p>C++</p>
+                    <div>
+                      <p>Dart</p>
+                      <p>GoLang</p>
+                      <p>HTML</p>
+                      <p>CSS</p>
+                      <p>Less</p>
+                      <p>Sass</p>
+                      <p>Java</p>
+                      <p>JavaScript</p>
+                      <p>Objective-C</p>
+                      <p>Perl</p>
+                      <p>PHP</p>
+                      <p>Python</p>
+                      <p>Ruby</p>
+                      <p>Rust</p>
+                      <p>Swift</p>
+                      <p>TypeScript</p>
+                      <p>VB.NET</p>
+                      <p>C#.NET</p>
+                      <p>C++</p>
+                    </div>
                   </div>
                 </div>
 
                 <div class="technologies-grid-card">
                   <h4 id="t2-head">Cloud and Server Technologies</h4>
                   <div id="t2-body">
-                    <p>AWS (Amazon Web Services)</p>
-                    <p>Apache</p>
-                    <p>Docker</p>
-                    <p>Google Cloud</p>
-                    <p>Linux</p>
-                    <p>Nextcloud 12</p>
-                    <p>Nginx</p>
-                    <p>Node.js</p>
-                    <p>Proxmox</p>
-                    <p>Windows Server</p>
-                    <p>Windows TSE</p>
+                    <div>
+                      <p>AWS (Amazon Web Services)</p>
+                      <p>Apache</p>
+                      <p>Docker</p>
+                      <p>Google Cloud</p>
+                      <p>Linux</p>
+                      <p>Nextcloud 12</p>
+                      <p>Nginx</p>
+                      <p>Node.js</p>
+                      <p>Proxmox</p>
+                      <p>Windows Server</p>
+                      <p>Windows TSE</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -335,52 +452,56 @@
                 <div class="technologies-grid-card">
                   <h4 id="t3-head">Web Development Frameworks and Tools</h4>
                   <div id="t3-body">
-                    <p>Angular 2+</p>
-                    <p>AngularJS</p>
-                    <p>Bootstrap</p>
-                    <p>Codeception</p>
-                    <p>CodeIgniter</p>
-                    <p>Cordova</p>
-                    <p>Electron</p>
-                    <p>Flutter</p>
-                    <p>jQuery</p>
-                    <p>Laravel</p>
-                    <p>MooTools</p>
-                    <p>PHPUnit Framework</p>
-                    <p>React</p>
-                    <p>React Native</p>
-                    <p>Ruby on Rails</p>
-                    <p>SOAP</p>
-                    <p>Symfony</p>
-                    <p>Vue.js</p>
-                    <p>Xamarin</p>
-                    <p>Yii</p>
-                    <p>Zend</p>
+                    <div>
+                      <p>Angular 2+</p>
+                      <p>AngularJS</p>
+                      <p>Bootstrap</p>
+                      <p>Codeception</p>
+                      <p>CodeIgniter</p>
+                      <p>Cordova</p>
+                      <p>Electron</p>
+                      <p>Flutter</p>
+                      <p>jQuery</p>
+                      <p>Laravel</p>
+                      <p>MooTools</p>
+                      <p>PHPUnit Framework</p>
+                      <p>React</p>
+                      <p>React Native</p>
+                      <p>Ruby on Rails</p>
+                      <p>SOAP</p>
+                      <p>Symfony</p>
+                      <p>Vue.js</p>
+                      <p>Xamarin</p>
+                      <p>Yii</p>
+                      <p>Zend</p>
+                    </div>
                   </div>
                 </div>
                 <div class="technologies-grid-card">
                   <h4 id="t4-head">Security and Testing</h4>
                   <div id="t4-body">
-                    <p>Acunetix Web Vulnerability Scanner</p>
-                    <p>AppScan</p>
-                    <p>Bad Boy Software</p>
-                    <p>Cypress</p>
-                    <p>Automation Framework</p>
-                    <p>Jest</p>
-                    <p>JMeter</p>
-                    <p>OWASP Zap</p>
-                    <p>Selenium WebDriver</p>
-                    <p>Skipfish</p>
-                    <p>Functional Testing</p>
-                    <p>Localization Testing</p>
-                    <p>Mobile Testing</p>
-                    <p>Performance Testing</p>
-                    <p>Quality Assurance</p>
-                    <p>Quality Control</p>
-                    <p>Risk Management</p>
-                    <p>Security Testing</p>
-                    <p>UI Testing</p>
-                    <p>Usability Testing</p>
+                    <div>
+                      <p>Acunetix Web Vulnerability Scanner</p>
+                      <p>AppScan</p>
+                      <p>Bad Boy Software</p>
+                      <p>Cypress</p>
+                      <p>Automation Framework</p>
+                      <p>Jest</p>
+                      <p>JMeter</p>
+                      <p>OWASP Zap</p>
+                      <p>Selenium WebDriver</p>
+                      <p>Skipfish</p>
+                      <p>Functional Testing</p>
+                      <p>Localization Testing</p>
+                      <p>Mobile Testing</p>
+                      <p>Performance Testing</p>
+                      <p>Quality Assurance</p>
+                      <p>Quality Control</p>
+                      <p>Risk Management</p>
+                      <p>Security Testing</p>
+                      <p>UI Testing</p>
+                      <p>Usability Testing</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -389,26 +510,30 @@
                 <div class="technologies-grid-card">
                   <h4 id="t5-head">Application Categories</h4>
                   <div id="t5-body">
-                    <p>Auction Portals</p>
-                    <p>Data Protection Modules</p>
-                    <p>Digital Rights Management</p>
-                    <p>E-commerce</p>
-                    <p>Mobile Applications</p>
-                    <p>Online Booking Systems</p>
-                    <p>Online Education</p>
+                    <div>
+                      <p>Auction Portals</p>
+                      <p>Data Protection Modules</p>
+                      <p>Digital Rights Management</p>
+                      <p>E-commerce</p>
+                      <p>Mobile Applications</p>
+                      <p>Online Booking Systems</p>
+                      <p>Online Education</p>
+                    </div>
                   </div>
                 </div>
                 <div class="technologies-grid-card">
                   <h4 id="t6-head">Databases</h4>
                   <div id="t6-body">
-                    <p>Memcached</p>
-                    <p>Microsoft SQL Server</p>
-                    <p>MongoDB</p>
-                    <p>MySQL</p>
-                    <p>Oracle</p>
-                    <p>PostgreSQL</p>
-                    <p>SQLite</p>
-                    <p>Topspeed</p>
+                    <div>
+                      <p>Memcached</p>
+                      <p>Microsoft SQL Server</p>
+                      <p>MongoDB</p>
+                      <p>MySQL</p>
+                      <p>Oracle</p>
+                      <p>PostgreSQL</p>
+                      <p>SQLite</p>
+                      <p>Topspeed</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -417,54 +542,58 @@
                 <div class="technologies-grid-card">
                   <h4 id="t7-head">Software Development Methodologies</h4>
                   <div id="t7-body">
-                    <p>Agile</p>
-                    <p>Feature Driven Development</p>
-                    <p>Kanban</p>
-                    <p>PMI</p>
-                    <p>Scrum</p>
-                    <p>Waterfall</p>
+                    <div>
+                      <p>Agile</p>
+                      <p>Feature Driven Development</p>
+                      <p>Kanban</p>
+                      <p>PMI</p>
+                      <p>Scrum</p>
+                      <p>Waterfall</p>
+                    </div>
                   </div>
                 </div>
                 <div class="technologies-grid-card">
                   <h4 id="t8-head">Integration and APIs</h4>
                   <div id="t8-body">
-                    <p>Amazon Webstore</p>
-                    <p>Exlap</p>
-                    <p>Facebook API</p>
-                    <p>FedEx</p>
-                    <p>Firebase Cloud Messaging</p>
-                    <p>FPDF</p>
-                    <p>Gearman</p>
-                    <p>Ghostscript</p>
-                    <p>Google Maps</p>
-                    <p>Google Cloud Print</p>
-                    <p>GraphQL</p>
-                    <p>HubSpot</p>
-                    <p>InDesign</p>
-                    <p>Ipipi SMS Gateway</p>
-                    <p>Magento</p>
-                    <p>MirrorLink</p>
-                    <p>MMK</p>
-                    <p>OCI</p>
-                    <p>OpenOffice</p>
-                    <p>PayPal API</p>
-                    <p>PDFlib</p>
-                    <p>QuickBooks</p>
-                    <p>RocketShipIt</p>
-                    <p>Salesforce</p>
-                    <p>Savant</p>
-                    <p>Shopify</p>
-                    <p>SMS-Assistant</p>
-                    <p>Sphinx</p>
-                    <p>Stripe</p>
-                    <p>Goodreads API</p>
-                    <p>UPS</p>
-                    <p>USAePay</p>
-                    <p>VitalSourceAPI</p>
-                    <p>Unity</p>
-                    <p>WordPress</p>
-                    <p>Zabbix</p>
-                    <p>Zoho</p>
+                    <div>
+                      <p>Amazon Webstore</p>
+                      <p>Exlap</p>
+                      <p>Facebook API</p>
+                      <p>FedEx</p>
+                      <p>Firebase Cloud Messaging</p>
+                      <p>FPDF</p>
+                      <p>Gearman</p>
+                      <p>Ghostscript</p>
+                      <p>Google Maps</p>
+                      <p>Google Cloud Print</p>
+                      <p>GraphQL</p>
+                      <p>HubSpot</p>
+                      <p>InDesign</p>
+                      <p>Ipipi SMS Gateway</p>
+                      <p>Magento</p>
+                      <p>MirrorLink</p>
+                      <p>MMK</p>
+                      <p>OCI</p>
+                      <p>OpenOffice</p>
+                      <p>PayPal API</p>
+                      <p>PDFlib</p>
+                      <p>QuickBooks</p>
+                      <p>RocketShipIt</p>
+                      <p>Salesforce</p>
+                      <p>Savant</p>
+                      <p>Shopify</p>
+                      <p>SMS-Assistant</p>
+                      <p>Sphinx</p>
+                      <p>Stripe</p>
+                      <p>Goodreads API</p>
+                      <p>UPS</p>
+                      <p>USAePay</p>
+                      <p>VitalSourceAPI</p>
+                      <p>Unity</p>
+                      <p>WordPress</p>
+                      <p>Zabbix</p>
+                      <p>Zoho</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -548,22 +677,25 @@
               </h3>
             </div>
             <div class="contact-grid-right">
-              <div class="form-box">
-                <label for="">Name <span>*</span></label>
-                <input type="text" />
+              <div class="contact-input-grid">
+                <div class="form-box">
+                  <label for="">Name <span>*</span></label>
+                  <input type="text" />
+                </div>
+                <div class="form-box">
+                  <label for="">Company <span>*</span></label>
+                  <input type="text" />
+                </div>
+                <div class="form-box">
+                  <label for="">Email <span>*</span></label>
+                  <input type="text" />
+                </div>
+                <div class="form-box">
+                  <label for="">Phone <span>*</span></label>
+                  <input type="text" />
+                </div>
               </div>
-              <div class="form-box">
-                <label for="">Company <span>*</span></label>
-                <input type="text" />
-              </div>
-              <div class="form-box">
-                <label for="">Email <span>*</span></label>
-                <input type="text" />
-              </div>
-              <div class="form-box">
-                <label for="">Phone <span>*</span></label>
-                <input type="text" />
-              </div>
+
               <div class="form-box">
                 <label for="">Message <span>*</span></label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -626,6 +758,96 @@
           console.log("--- onScrollOverflow ---");
           console.log(params);
         },
+      });
+    </script>
+    <script>
+      var TH1 = document.getElementById("t1-head");
+      var TB1 = document.getElementById("t1-body");
+      TH1.addEventListener("click", function () {
+        if (TB1.style.maxHeight) {
+          TB1.style.maxHeight = null;
+        } else {
+          TB1.style.maxHeight = TB1.scrollHeight + "px";
+        }
+      });
+      var TH2 = document.getElementById("t2-head");
+      var TB2 = document.getElementById("t2-body");
+      TH2.addEventListener("click", function () {
+        if (TB2.style.maxHeight) {
+          TB2.style.maxHeight = null;
+        } else {
+          TB2.style.maxHeight = TB2.scrollHeight + "px";
+        }
+      });
+      var TH3 = document.getElementById("t3-head");
+      var TB3 = document.getElementById("t3-body");
+      TH3.addEventListener("click", function () {
+        if (TB3.style.maxHeight) {
+          TB3.style.maxHeight = null;
+        } else {
+          TB3.style.maxHeight = TB3.scrollHeight + "px";
+        }
+      });
+      var TH4 = document.getElementById("t4-head");
+      var TB4 = document.getElementById("t4-body");
+      TH4.addEventListener("click", function () {
+        if (TB4.style.maxHeight) {
+          TB4.style.maxHeight = null;
+        } else {
+          TB4.style.maxHeight = TB4.scrollHeight + "px";
+        }
+      });
+      var TH5 = document.getElementById("t5-head");
+      var TB5 = document.getElementById("t5-body");
+      TH5.addEventListener("click", function () {
+        if (TB5.style.maxHeight) {
+          TB5.style.maxHeight = null;
+        } else {
+          TB5.style.maxHeight = TB5.scrollHeight + "px";
+        }
+      });
+      var TH6 = document.getElementById("t6-head");
+      var TB6 = document.getElementById("t6-body");
+      TH6.addEventListener("click", function () {
+        if (TB6.style.maxHeight) {
+          TB6.style.maxHeight = null;
+        } else {
+          TB6.style.maxHeight = TB6.scrollHeight + "px";
+        }
+      });
+      var TH7 = document.getElementById("t7-head");
+      var TB7 = document.getElementById("t7-body");
+      TH7.addEventListener("click", function () {
+        if (TB7.style.maxHeight) {
+          TB7.style.maxHeight = null;
+        } else {
+          TB7.style.maxHeight = TB7.scrollHeight + "px";
+        }
+      });
+      var TH8 = document.getElementById("t8-head");
+      var TB8 = document.getElementById("t8-body");
+      TH8.addEventListener("click", function () {
+        if (TB8.style.maxHeight) {
+          TB8.style.maxHeight = null;
+        } else {
+          TB8.style.maxHeight = TB8.scrollHeight + "px";
+        }
+      });
+
+      $(".open-header").click(() => {
+        $(".header-mob").css({
+          display: "block",
+        });
+      });
+      $(".close-header").click(() => {
+        $(".header-mob").css({
+          display: "none",
+        });
+      });
+      $(".header-mob-body a").click(() => {
+        $(".header-mob").css({
+          display: "none",
+        });
       });
     </script>
   </body>
