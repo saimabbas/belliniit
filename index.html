@@ -676,40 +676,46 @@
                 US!
               </h3>
             </div>
-            <div class="contact-grid-right">
+            <form
+              class="contact-grid-right"
+              id="contact-form"
+              action="send_email.php"
+              method="post"
+            >
               <div class="contact-input-grid">
                 <div class="form-box">
-                  <label for="">Name <span>*</span></label>
-                  <input type="text" />
+                  <label for="name">Name <span>*</span></label>
+                  <input type="text" name="name" id="name" required />
                 </div>
                 <div class="form-box">
-                  <label for="">Company <span>*</span></label>
-                  <input type="text" />
+                  <label for="company">Company <span>*</span></label>
+                  <input type="text" name="company" id="company" required />
                 </div>
                 <div class="form-box">
-                  <label for="">Email <span>*</span></label>
-                  <input type="text" />
+                  <label for="email">Email <span>*</span></label>
+                  <input type="text" name="email" id="email" required />
                 </div>
                 <div class="form-box">
-                  <label for="">Phone <span>*</span></label>
-                  <input type="text" />
+                  <label for="phone">Phone <span>*</span></label>
+                  <input type="text" name="phone" id="phone" required />
                 </div>
               </div>
 
               <div class="form-box">
-                <label for="">Message <span>*</span></label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="message">Message <span>*</span></label>
+                <textarea id="message" name="message" required></textarea>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="" id="c1" />
-                <label for="c1">Request Case Studies (optional)</label>
+                <input type="checkbox" name="option1" id="option1" />
+                <label for="option1">Request Case Studies (optional)</label>
               </div>
               <div class="form-check">
-                <input type="checkbox" name="" id="c2" />
-                <label for="c2">Request Testimonials (optional)</label>
+                <input type="checkbox" id="option2" name="option2" />
+                <label for="option2">Request Testimonials (optional)</label>
               </div>
-              <button>SEND</button>
-            </div>
+              <button type="submit" id="submitButton">SEND</button>
+            </form>
+            <div id="message-container"></div>
           </div>
         </div>
         <footer>
@@ -731,6 +737,70 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/fullpage.js"></script>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Validate the form
+          var name = document.getElementById("name").value.trim();
+          var company = document.getElementById("company").value.trim();
+          var email = document.getElementById("email").value.trim();
+          var phone = document.getElementById("phone").value.trim();
+          var message = document.getElementById("message").value.trim();
+
+          if (!name || !company || !email || !phone || !message) {
+            displayMessage("Please fill in all required fields.", "error");
+            return;
+          }
+
+          // Prepare the data for submission
+          var formData = new FormData();
+          formData.append("name", name);
+          formData.append("company", company);
+          formData.append("email", email);
+          formData.append("phone", phone);
+          formData.append("message", message);
+          formData.append(
+            "option1",
+            document.getElementById("option1").checked
+          );
+          formData.append(
+            "option2",
+            document.getElementById("option2").checked
+          );
+
+          // Send the data using fetch API
+          fetch("https://api.example.com/submit", {
+            method: "POST",
+            body: formData,
+          })
+            .then(function (response) {
+              if (response.ok) {
+                displayMessage("Form submitted successfully!", "success");
+                document.getElementById("contact-form").reset(); // Reset the form
+              } else {
+                displayMessage(
+                  "Failed to submit the form. Please try again.",
+                  "error"
+                );
+              }
+            })
+            .catch(function (error) {
+              displayMessage(
+                "An error occurred while submitting the form. Please try again.",
+                "error"
+              );
+            });
+        });
+
+      function displayMessage(message, type) {
+        var container = document.getElementById("message-container");
+        container.innerHTML = '<p class="' + type + '">' + message + "</p>";
+      }
+    </script>
+
     <script type="text/javascript">
       var myFullpage = new fullpage("#fullpage", {
         anchors: [
