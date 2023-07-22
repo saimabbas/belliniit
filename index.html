@@ -25,7 +25,10 @@
             </a>
           </li>
           <div class="header-center">
-            <li data-menuanchor="about-section" class="active">
+            <li data-menuanchor="hero-section">
+              <a href="#hero-section">Home</a>
+            </li>
+            <li data-menuanchor="about-section">
               <a href="#about-section">About</a>
             </li>
             <li data-menuanchor="process-section">
@@ -67,7 +70,10 @@
           </div>
         </div>
         <div class="header-mob-body">
-          <li data-menuanchor="about-section" class="active">
+          <li data-menuanchor="hero-section">
+            <a href="#hero-section">Home</a>
+          </li>
+          <li data-menuanchor="about-section">
             <a href="#about-section">About</a>
           </li>
           <li data-menuanchor="process-section">
@@ -91,11 +97,18 @@
     <main id="fullpage">
       <section class="hero-section section" id="home">
         <h1>BELLINIIT</h1>
-        <a href="">
+
+        <li data-menuanchor="about-section">
+          <a href="#about-section">
+            <span class="material-symbols-outlined"> arrow_downward </span>
+          </a>
+        </li>
+        <!-- <a href="">
           <span class="material-symbols-outlined"> arrow_downward </span>
-        </a>
+        </a> -->
       </section>
       <section class="about-section section" id="about">
+        <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
         <div class="box">
           <div class="about-content">
             <h2>ABOUT</h2>
@@ -134,6 +147,7 @@
         </div>
       </section>
       <section class="process-section section" id="process">
+        <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
         <div class="box">
           <div class="process-content">
             <h2>PROCESS</h2>
@@ -147,6 +161,7 @@
               src="assets/img/timeline-vertical.png"
               alt=""
             /> -->
+
             <div class="roadmap-content">
               <div class="road-map-line"></div>
               <div class="roadmap-box-left">
@@ -286,6 +301,7 @@
         </div>
       </section>
       <section class="services-section section" id="services">
+        <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
         <div class="box">
           <div class="services-content">
             <h2>Services</h2>
@@ -397,6 +413,7 @@
         </div>
       </section>
       <section class="technologies-section section" id="technologies">
+        <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
         <div class="box">
           <div class="technologies-content">
             <h2>Technologies</h2>
@@ -602,6 +619,7 @@
         </div>
       </section>
       <section class="team-section section" id="team">
+        <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
         <div class="box">
           <div class="team-content">
             <h2>TEAM</h2>
@@ -667,62 +685,65 @@
           </div>
         </div>
       </section>
-      <section class="contact-section section" id="contact">
-        <div class="box">
-          <div class="contact-grid">
-            <div class="contact-grid-left">
-              <h3>
-                CONTACT <br />
-                US
-              </h3>
-            </div>
-            <form class="contact-grid-right" id="contactForm">
-              <div class="contact-input-grid">
-                <div class="form-box">
-                  <label for="name">Name <span>*</span></label>
-                  <input type="text" name="Name" id="name" required />
-                </div>
-                <div class="form-box">
-                  <label for="company">Company <span>*</span></label>
-                  <input type="text" name="Company" id="company" required />
-                </div>
-                <div class="form-box">
-                  <label for="email">Email <span>*</span></label>
-                  <input type="text" name="Email" id="email" required />
-                </div>
-                <div class="form-box">
-                  <label for="phone">Phone <span>*</span></label>
-                  <input type="text" name="Phone" id="phone" required />
-                </div>
+      <section class="contact-container section" id="contact">
+        <div class="contact-section section">
+          <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
+          <div class="box">
+            <div class="contact-grid">
+              <div class="contact-grid-left">
+                <h3>
+                  CONTACT <br />
+                  US
+                </h3>
               </div>
+              <form class="contact-grid-right" id="contactForm">
+                <div class="contact-input-grid">
+                  <div class="form-box">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" name="Name" id="name" required />
+                  </div>
+                  <div class="form-box">
+                    <label for="company">Company <span>*</span></label>
+                    <input type="text" name="Company" id="company" required />
+                  </div>
+                  <div class="form-box">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="text" name="Email" id="email" required />
+                  </div>
+                  <div class="form-box">
+                    <label for="phone">Phone <span>*</span></label>
+                    <input type="text" name="Phone" id="phone" required />
+                  </div>
+                </div>
 
-              <div class="form-box">
-                <label for="message">Message <span>*</span></label>
-                <textarea id="message" name="Message" required></textarea>
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  name="Request_Case_Studies"
-                  id="Request_Case_Studies"
-                />
-                <label for="Request_Case_Studies"
-                  >Request Case Studies (optional)</label
-                >
-              </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  id="Request_Testimonials"
-                  name="Request_Testimonials"
-                />
-                <label for="Request_Testimonials"
-                  >Request Testimonials (optional)</label
-                >
-              </div>
-              <button type="submit" id="submitButton">SEND</button>
-            </form>
-            <div id="message-container"></div>
+                <div class="form-box">
+                  <label for="message">Message <span>*</span></label>
+                  <textarea id="message" name="Message" required></textarea>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    name="Request_Case_Studies"
+                    id="Request_Case_Studies"
+                  />
+                  <label for="Request_Case_Studies"
+                    >Request Case Studies (optional)</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    id="Request_Testimonials"
+                    name="Request_Testimonials"
+                  />
+                  <label for="Request_Testimonials"
+                    >Request Testimonials (optional)</label
+                  >
+                </div>
+                <button type="submit" id="submitButton">SEND</button>
+              </form>
+              <div id="message-container"></div>
+            </div>
           </div>
         </div>
         <footer>
