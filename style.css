@@ -1086,7 +1086,7 @@ section {
     font-size: 15px;
   }
 }
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 750px) {
   .box {
     padding: 0 5rem 0 6.5rem;
   }
