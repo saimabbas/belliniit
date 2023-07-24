@@ -998,12 +998,11 @@ section {
     padding: 2.5rem 0;
   }
   .about-logos-grid {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .about-logos-grid img {
-    height: 5.5rem;
-    margin: 0.5rem;
+    width: 100%;
   }
   .timeline-horizontal {
     display: none;
