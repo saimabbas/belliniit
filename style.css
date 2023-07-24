@@ -347,7 +347,7 @@ h2 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 5rem;
-  padding: 7.5rem 0 0 0;
+  padding: 6rem 0 0 0;
 }
 .contact-grid-left {
   width: 100%;
