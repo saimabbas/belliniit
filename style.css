@@ -704,6 +704,7 @@ section {
   margin: 0.65rem 0;
   color: #000;
   opacity: 0.65;
+  font-size: 1.65rem;
 }
 .roadmap-text-box h6 {
   font-size: 2.5rem;
@@ -1091,7 +1092,7 @@ section {
 }
 @media only screen and (orientation: landscape) {
   .box {
-    padding: 0 5rem;
+    padding: 0 7.5rem;
   }
   img {
     transform: scale(0.85);
@@ -1101,5 +1102,24 @@ section {
   }
   .header-content {
     padding: 0.5rem 0;
+  }
+  .hero-section h1 {
+    font-size: 8.5rem;
+  }
+  .about-2 h5 {
+    font-size: 1.65rem;
+  }
+  .services-content > h6 {
+    font-size: 1.65rem;
+  }
+  .services-grid-card h4 {
+    font-size: 3rem;
+    margin: 0 0 1.5rem 0;
+  }
+  .services-grid-card h4 span {
+    font-size: 5rem;
+  }
+  .team-grid-card-ceo img {
+    transform: scale(01);
   }
 }
