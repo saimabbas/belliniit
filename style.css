@@ -435,8 +435,6 @@ h2 {
 footer {
   width: 100%;
   padding: 5rem 0 3.5rem 0;
-  background-color: red;
-  width: 750px !important;
 }
 .footer-content {
   width: 100%;
@@ -919,7 +917,7 @@ section {
     grid-template-columns: 0.5fr 1fr;
   }
   .contact-grid-left h3 {
-    font-size: 8.5rem;
+    font-size: 6.5rem;
   }
   footer {
     width: 100%;
@@ -1115,5 +1113,8 @@ section {
   }
   .team-grid-card-ceo img {
     transform: scale(01);
+  }
+  .contact-grid-left h3 {
+    font-size: 5rem;
   }
 }
