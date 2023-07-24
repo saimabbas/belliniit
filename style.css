@@ -500,6 +500,7 @@ header {
   margin: 0 1.5rem;
   text-decoration: none;
   font-size: 600;
+  text-transform: uppercase;
 }
 #menu li.active {
   border: 2px solid red;
