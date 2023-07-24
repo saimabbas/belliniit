@@ -1089,3 +1089,17 @@ section {
     font-size: 15px;
   }
 }
+@media only screen and (orientation: landscape) {
+  .box {
+    padding: 0 5rem;
+  }
+  img {
+    transform: scale(0.85);
+  }
+  :root {
+    font-size: 8px;
+  }
+  .header-content {
+    padding: 0.5rem 0;
+  }
+}
