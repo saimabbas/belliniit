@@ -567,23 +567,19 @@ header {
   height: 100vh;
   overflow: hidden;
 }
-.content {
-  height: 100vh;
-  overflow-y: auto;
-}
 .belliniit {
   width: 100%;
+}
+.contact-bg-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 footer {
   background-color: #f7f8f9;
 }
 section {
   background-color: #fff;
-}
-.panel {
-  width: 100%;
-  height: 100vh !important;
-  overflow-y: auto;
 }
 .fp-watermark {
   display: none;
@@ -1096,9 +1092,6 @@ section {
   }
   img {
     transform: scale(0.85);
-  }
-  :root {
-    font-size: 8px;
   }
   .header-content {
     padding: 0.5rem 0;
