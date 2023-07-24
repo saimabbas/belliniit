@@ -1088,7 +1088,7 @@ section {
 }
 @media only screen and (orientation: landscape) {
   .box {
-    padding: 0 7.5rem;
+    padding: 0 5rem 0 6.5rem;
   }
   img {
     transform: scale(0.85);
