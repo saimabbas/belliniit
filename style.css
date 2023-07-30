@@ -364,9 +364,15 @@ h2 {
   color: var(--peach);
 }
 .contact-grid-left img {
-  width: max-content;
+  width: 100%;
   height: 35rem;
   object-fit: contain;
+}
+.contact-grid > img {
+  width: 100%;
+  height: 20rem;
+  object-fit: contain;
+  display: none;
 }
 .ontact-grid-right {
   width: 100%;
@@ -533,6 +539,8 @@ header {
 .header-mob {
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: fixed;
   z-index: 10000;
   background-color: var(--peach);
@@ -987,6 +995,13 @@ section {
   }
 }
 @media screen and (max-width: 750px) {
+  .contact-grid-left img {
+    display: none;
+  }
+  .contact-grid > img {
+    display: block;
+    margin: 0 0 2.5rem 0;
+  }
   .about-section,
   .process-section,
   .services-section,
