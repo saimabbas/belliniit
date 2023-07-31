@@ -414,6 +414,7 @@ h2 {
   background-color: #f7f8f9;
   border-radius: 0.5rem;
   min-height: 16.5rem;
+  font-size: 1.65rem;
 }
 .form-check {
   display: flex;
@@ -896,9 +897,11 @@ section {
   .process-section,
   .services-section,
   .technologies-section,
-  .team-section,
-  .contact-section {
+  .team-section {
     padding: 3.5rem 0;
+  }
+  .contact-section {
+    padding: 3.5rem 0 0 0;
   }
   h2 {
     font-size: 3rem;
@@ -1006,9 +1009,11 @@ section {
   .process-section,
   .services-section,
   .technologies-section,
-  .team-section,
-  .contact-section {
+  .team-section {
     padding: 2.5rem 0;
+  }
+  .contact-section {
+    padding: 2.5rem 0 0 0;
   }
   .hero-section h1 {
     font-size: 6.5rem;
