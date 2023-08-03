@@ -691,9 +691,9 @@
         </div>
       </section>
       <section class="contact-container section" id="contact">
+        <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
         <div class="contact-section">
           <div class="contact-bg-box">
-            <img class="section-bg" src="/assets/img/bg1.jpg" alt="" />
             <div class="box">
               <div class="contact-grid">
                 <div class="contact-grid-left">
@@ -771,6 +771,9 @@
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/fullpage.js"></script>
+    <script src="js/scrolloverflow.js"></script>
+    <script src="js/fullPage.scrollOverflowReset.limited.min.js"></script>
+    <script src="js/fullPage.extensions.min.js"></script>
     <script>
       document
         .getElementById("contactForm")
@@ -840,6 +843,10 @@
         lazyLoad: true,
         credits: { enabled: false },
         scrollOverflow: true,
+        resetSliders: true,
+        scrollOverflowReset: true,
+        scrollOverflowResetKey:
+          "MVVZV3gyWVhKdmRISnBaMjh1WTI5dEtNX25RVWMyTnliMnhzVDNabGNtWnNiM2RTWlhObGRBPT05SzI=",
         onScrollOverflow: function (section, slide, position, direction) {
           var params = {
             section: section,

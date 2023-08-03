@@ -347,6 +347,8 @@ h2 {
 .contact-section {
   width: 100%;
   padding: 5rem 0 0 0;
+  position: relative;
+  z-index: 5;
 }
 .contact-grid {
   width: 100%;
@@ -801,7 +803,12 @@ section {
   border-width: 5px 0 5px 5px;
   border-radius: 50px 0 0 50px;
 }
-
+/* .fp-table {
+  justify-content: flex-start !important;
+} */
+.fp-scroll-mac.fp-viewing-contact-section {
+  height: 100vh !important;
+}
 /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
 @media only screen and (max-width: 400px) {
   .card:nth-child(odd)::before {
@@ -884,6 +891,12 @@ section {
   }
 }
 @media screen and (max-width: 1050px) {
+  .team-grid-card-ceo img {
+    float: none;
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+    object-fit: cover;
+  }
   .box {
     padding: 0 2.5rem;
   }
@@ -992,12 +1005,7 @@ section {
     height: 3rem;
   }
 }
-@media screen and (max-width: 850px) {
-  .contact-grid-left h3 {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 750px) {
+@media screen and (min-height: 900px) {
   .contact-grid-left img {
     display: none;
   }
@@ -1005,6 +1013,17 @@ section {
     display: block;
     margin: 0 0 2.5rem 0;
   }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .contact-grid-left h3 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 750px) {
   .about-section,
   .process-section,
   .services-section,
@@ -1091,19 +1110,12 @@ section {
   .team-grid-card-team img {
     width: 100%;
   }
-  .contact-grid {
-    grid-template-columns: 1fr;
-    grid-gap: 2.5rem;
-  }
   .footer-content {
     flex-direction: column;
     align-items: flex-start;
   }
   .footer-content img {
     margin: 0 0 2.5rem 0;
-  }
-  .contact-input-grid {
-    grid-template-columns: 1fr;
   }
   .contact-grid-left h3 {
     font-size: 3rem;
