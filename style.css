@@ -806,9 +806,9 @@ section {
 /* .fp-table {
   justify-content: flex-start !important;
 } */
-.fp-scroll-mac.fp-viewing-contact-section {
+/* .fp-scroll-mac.fp-viewing-contact-section {
   height: 100vh !important;
-}
+} */
 /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
 @media only screen and (max-width: 400px) {
   .card:nth-child(odd)::before {
@@ -1004,8 +1004,6 @@ section {
     width: 3rem;
     height: 3rem;
   }
-}
-@media screen and (min-height: 900px) {
   .contact-grid-left img {
     display: none;
   }
@@ -1016,6 +1014,24 @@ section {
   .contact-grid {
     grid-template-columns: 1fr;
     grid-gap: 2.5rem;
+  }
+}
+@media screen and (min-height: 1100px) {
+  .contact-grid-left img {
+    display: none;
+  }
+  .contact-grid > img {
+    display: block;
+    margin: 0 0 2.5rem 0;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2.5rem;
+  }
+}
+@media screen and (min-height: 1100px) and (min-width: 1500px) {
+  .contact-grid > img {
+    height: 35rem;
   }
 }
 @media screen and (max-width: 850px) {
